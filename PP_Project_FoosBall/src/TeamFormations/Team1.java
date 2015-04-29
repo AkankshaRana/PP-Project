@@ -3,10 +3,10 @@ package TeamFormations;
 public class Team1 {
 
 	private PlayerFactory factory;
-	Attacker[] attackers;
-	Defender[] defenders;
-	MidFielder[] midFielders;
-	GoalKeeper goalKeeper;
+	public Attacker[] attackers;
+	public Defender[] defenders;
+	public MidFielder[] midFielders;
+	public GoalKeeper goalKeeper;
 	Player[] team1Players;
 	
 	public Team1(){
@@ -32,7 +32,7 @@ public class Team1 {
 		}
 		
 		for(int i=0,j=0,k=0;i<numDefenders;i++,j+=90,k+=110){
-			this.defenders[i]=(Defender)factory.getPlayer("Defender",170, 70+j,0+k,160+90,teamType);
+			this.defenders[i]=(Defender)factory.getPlayer("Defender",170, 70+j,0+k,160+j,teamType);
 			this.team1Players[count]=this.defenders[i];
 			count++;
 		}

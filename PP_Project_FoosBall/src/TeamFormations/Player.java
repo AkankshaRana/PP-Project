@@ -1,5 +1,6 @@
 package TeamFormations;
 
+import java.awt.Graphics;
 import java.awt.Image;
 
 import javax.swing.JComponent;
@@ -18,5 +19,8 @@ public abstract class Player extends JComponent {
 	public abstract void setMinY(int y);
 	public abstract void setMaxY(int y);
 	public abstract void setImage(String imgPath);
+	public abstract String getTeamType();
+	@Override
+	public abstract void paintComponent(Graphics g);
 	
 }

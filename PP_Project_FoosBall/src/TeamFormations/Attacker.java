@@ -24,7 +24,7 @@ public class Attacker extends Player{
 		
 		
 		try {
-			img = ImageIO.read(new File("C:/Users/hp/Desktop/PP/flag.png")); //CHANGE IT!
+			img = ImageIO.read(new File("flag.png")); //CHANGE IT!C:/Users/akank_000/Desktop/
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -90,6 +90,12 @@ public class Attacker extends Player{
 			e.printStackTrace();
 		}
 		
+	}
+
+	@Override
+	public String getTeamType() {
+		
+		return this.teamType;
 	}
 	
 }

@@ -24,7 +24,7 @@ public class MidFielder extends Player{
 		
 		
 		try {
-			img = ImageIO.read(new File("C:/Users/hp/Desktop/PP/flag.png")); //CHANGE IT!
+			img = ImageIO.read(new File("flag.png")); //CHANGE IT!
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -80,6 +80,12 @@ public class MidFielder extends Player{
 	@Override
 	public void paintComponent(Graphics g) {
 		g.drawImage(img, x, y, 20, 20, null, null);
+	}
+	
+	@Override
+	public String getTeamType() {
+		
+		return this.teamType;
 	}
 	
 	@Override

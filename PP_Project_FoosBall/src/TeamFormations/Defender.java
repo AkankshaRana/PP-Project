@@ -23,7 +23,7 @@ public class Defender extends Player{
 		
 		
 		try {
-			img = ImageIO.read(new File("C:/Users/hp/Desktop/PP/flag.png")); //CHANGE IT!
+			img = ImageIO.read(new File("flag.png")); //CHANGE IT!
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -89,6 +89,12 @@ public class Defender extends Player{
 			e.printStackTrace();
 		}
 		
+	}
+	
+	@Override
+	public String getTeamType() {
+		
+		return this.teamType;
 	}
 
 }

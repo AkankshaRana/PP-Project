@@ -2,12 +2,13 @@ package TeamFormations;
 
 public class TeamFactory {
 
-	Team1 team1;
-	Team2 team2;
+	public Team1 team1;
+	public Team2 team2;
 	private static TeamFactory factoryInstance=new TeamFactory();
 	
 	private TeamFactory(){
-		
+		team1=new Team1();
+		team2=new Team2();
 	}
 	
 	public static TeamFactory getInstance(){

@@ -1,5 +1,6 @@
 package BackendClasses;
 
-public class Status {
+public class Status 
+{
 
 }

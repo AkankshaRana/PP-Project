@@ -28,7 +28,11 @@ public class Game extends JFrame{
 		this.add(tabel,BorderLayout.SOUTH);
 		team1Panel.setLayout(new FlowLayout());
 		team2Panel.setLayout(new FlowLayout());
-
+		
+		tabel.readyGameField(2, 4, 4, "");
+		tabel.gameStart();
+		//tabel.paintComponent(g);
+		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(820, 600);
 		setVisible(true);
