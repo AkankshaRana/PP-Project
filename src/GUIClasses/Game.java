@@ -530,10 +530,7 @@ public class Game extends JFrame{
 		});
 		
 		
-		JPanel confirmPanel = new JPanel(new GridLayout(0, 1));
-		confirmPanel.add(question);
-		confirmPanel.add(formation1);
-		confirmPanel.add(formation2);
+	
 		confirmPanel.add(formation3);
 		confirmPanel.add(question2);
 		
